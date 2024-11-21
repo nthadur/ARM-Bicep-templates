@@ -1,0 +1,23 @@
+resource symbolicname 'Microsoft.SqlVirtualMachine/sqlVirtualMachineGroups@2023-10-01' = {
+  location: 'string'
+  name: 'string'
+  properties: {
+    sqlImageOffer: 'string'
+    sqlImageSku: 'string'
+    wsfcDomainProfile: {
+      clusterBootstrapAccount: 'string'
+      clusterOperatorAccount: 'string'
+      clusterSubnetType: 'string'
+      domainFqdn: 'string'
+      fileShareWitnessPath: 'string'
+      isSqlServiceAccountGmsa: bool
+      ouPath: 'string'
+      sqlServiceAccount: 'string'
+      storageAccountPrimaryKey: 'string'
+      storageAccountUrl: 'string'
+    }
+  }
+  tags: {
+    {customized property}: 'string'
+  }
+}
