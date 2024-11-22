@@ -1,0 +1,17 @@
+resource myNIC 'Microsoft.Network/networkInterfaces@2021-03-01' = {
+  name: 'myNIC'
+  location: 'East US'
+  properties: {
+    ipConfigurations: [
+      {
+        name: 'ipconfig1'
+        properties: {
+          privateIPAllocationMethod: 'Dynamic'
+          subnet: {
+            id: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.Network/virtualNetworks/myVnet/subnets/default'
+          }
+        }
+      }
+    ]
+  }
+}

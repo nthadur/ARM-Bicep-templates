@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "resources": [
+    {
+      "type": "Microsoft.Sql/servers",
+      "apiVersion": "2021-02-01-preview",
+      "location": "East US",
+      "properties": {
+        "administratorLogin": "sqladmin",
+        "administratorLoginPassword": "password123",
+        "version": "12.0"
+      },
+      "name": "mySQLServer"
+    }
+  ]
+}

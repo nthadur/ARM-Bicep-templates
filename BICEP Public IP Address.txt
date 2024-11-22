@@ -1,0 +1,7 @@
+resource myPublicIP 'Microsoft.Network/publicIPAddresses@2021-03-01' = {
+  name: 'myPublicIP'
+  location: 'East US'
+  properties: {
+    publicIPAllocationMethod: 'Dynamic'
+  }
+}

@@ -1,0 +1,12 @@
+resource myKeyVault 'Microsoft.KeyVault/vaults@2021-04-01-preview' = {
+  name: 'myKeyVault'
+  location: 'East US'
+  properties: {
+    sku: {
+      family: 'A'
+      name: 'standard'
+    }
+    tenantId: '{tenantId}'
+    accessPolicies: []
+  }
+}

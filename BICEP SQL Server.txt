@@ -1,0 +1,9 @@
+resource mySQLServer 'Microsoft.Sql/servers@2021-02-01-preview' = {
+  name: 'mySQLServer'
+  location: 'East US'
+  properties: {
+    administratorLogin: 'sqladmin'
+    administratorLoginPassword: 'password123'
+    version: '12.0'
+  }
+}
