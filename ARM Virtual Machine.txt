@@ -1,0 +1,25 @@
+{
+  "type": "Microsoft.SqlVirtualMachine/sqlVirtualMachineGroups",
+  "apiVersion": "2023-10-01",
+  "name": "string",
+  "location": "string",
+  "properties": {
+    "sqlImageOffer": "string",
+    "sqlImageSku": "string",
+    "wsfcDomainProfile": {
+      "clusterBootstrapAccount": "string",
+      "clusterOperatorAccount": "string",
+      "clusterSubnetType": "string",
+      "domainFqdn": "string",
+      "fileShareWitnessPath": "string",
+      "isSqlServiceAccountGmsa": "bool",
+      "ouPath": "string",
+      "sqlServiceAccount": "string",
+      "storageAccountPrimaryKey": "string",
+      "storageAccountUrl": "string"
+    }
+  },
+  "tags": {
+    "{customized property}": "string"
+  }
+}
